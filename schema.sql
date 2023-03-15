@@ -1,6 +1,8 @@
 SHOW TABLES;
 
 SHOW DATABASES;
+CREATE DATABASE IF NOT EXISTS `name`;
+USE `name`;
 
 INSERT INTO user (name, email)
 VALUES ('Kev', 'kev@gmail.com');

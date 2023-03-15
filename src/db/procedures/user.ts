@@ -1,10 +1,5 @@
 import { db } from "$db";
-
-interface UserInput {
-  name: string;
-  email: string;
-  role?: 'admin' | 'client' | null
-};
+import type { UserInput } from '$types';
 
 async function getUsers() {
   const [ res ] = await db.query("SELECT * FROM user");
