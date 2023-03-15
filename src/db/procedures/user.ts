@@ -3,7 +3,7 @@ import { db } from "$db";
 interface UserInput {
   name: string;
   email: string;
-  role?: 'admin' | 'client' | null;
+  role?: 'admin' | 'client' | null
 };
 
 async function getUsers() {

@@ -28,7 +28,7 @@ app.get('/users/:id', async (req: Request<{ id: string; }>, res: Response) => {
 app.post('/users', async (req: Request<any, any, UserInput>, res: Response) => {
   const user = await createUsr(req.body);
   console.log(user);
-  res.status(200).send('yo!');
+  res.status(200).send('yo');
 });
 
 app.delete('/users/:id', async (req: Request<{ id: string; }>, res: Response) => {

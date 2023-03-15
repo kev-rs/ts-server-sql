@@ -1,5 +1,5 @@
 SHOW TABLES;
-SELECT * FROM user;
+
 SHOW DATABASES;
 
 INSERT INTO user (name, email)
